@@ -4,7 +4,7 @@
 #include "Route.h"
 #include "Image.h"
 #include "DrawText.h"
-#define PARALLEL 2
+#define PARALLEL 0
 // 0: no multithreading
 // 1: draw line in multi threaded
 // 2: addTour is multithreaded
