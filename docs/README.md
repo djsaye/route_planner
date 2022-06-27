@@ -6,12 +6,10 @@ Eli Konopinski, Satvik Yellanki, Lucian Bontumasi, Jake Li
 ## Welcome!
 We used the OpenFlights database to find the optimal paths between airports globally, and plot that path onto a map.
 
-Our presentation video is located here: https://youtu.be/wz5iYRIpl-U
-
 ## Using the route planner
 We tried to make our project as easy to use as possible. After running `make`, our entire project can be accesed by running `./flights`. An interactive text interface will guide you through how to access the various parts of the project. There are four options: DFS with text output to the console, Dijkstra's Algorithm with text output to the console, Dijkstra's Algorithm with visual output, and a simple test output for drawing the shortest line between two airports.
 
-Within our simple UI, you may select input dataset files for all four of our functions, and output PNG files for our Dijkstra's Algorithm visual output. There are also default file locations for both input and output, so if you would like to use our input data and standard output file location, you can. (If you would like to manually change the defaults, they are stored on [lines 256-258 in main.cpp](/main.cpp#L256-L258).)
+Within our simple UI, you may select input dataset files for all four of our functions, and output PNG files for our Dijkstra's Algorithm visual output. There are also default file locations for both input and output, so if you would like to use our input data and standard output file location, you can. If you would like to manually change the defaults, they are stored on [lines 403-406 in main.cpp](/main.cpp#L403-L406). You can also set the OPTION macro to what your task is on [line 16 in main.cpp](/main.cpp$L16) with the menu right above it.
 
 We have provided some fun flight paths to try in [/docs/paths_to_try](/docs/paths_to_try.md).
 
