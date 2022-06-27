@@ -1,0 +1,28 @@
+//will have some type of data structure that holds all nodes/verticies
+//will have some type of data structure that holds all edges
+//will have some type of data structure that tracks visited nodes
+
+//options for function: pass in data structure with nodes and pass in data structure with edges
+//options for function: could potentially pass in nothing and just make the data structures for nodes and edges 
+private member variables.*/
+//options for function: could pass in starting node, use recursion
+
+//need to create an empty stack
+//3: initialize the first node as visited
+//push neighboring nodes (use map<ID, map<ID, double>> dists using current node (ID))
+//Until stack is empty or location is not visited, location = stack.pop()
+//If stack is not empty, current = location, go back to step 3
+//If stack is empty, then we are done.
+
+
+
+ func DFS(Node* cur){
+    
+     create empty stack
+     initialize cur as visited
+     for(i = 0; i < map<ID>.)
+
+
+
+}
+

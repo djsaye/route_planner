@@ -1,0 +1,11 @@
+.objs/
+
+*.o
+
+test
+
+flights
+
+.vscode/
+
+images/path_map.png
