@@ -13,7 +13,7 @@
     5: Get an Image with the DFS traversal
     ELSE: Run the full program with the GUI
 */
-#define OPTION 3
+#define OPTION 0
 
 #if (OPTION == 1)
 int main() {
