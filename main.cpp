@@ -213,7 +213,6 @@ void runDykstrasWithVisual(std::string routes_path, std::string ports_path, std:
         return;
 #endif
     }
-    std::cout << "\n1";
     std::stack<Route> path = w.getShortestPath(port1, port2);
 
     std::vector<Airport> visualPath;
@@ -226,14 +225,11 @@ void runDykstrasWithVisual(std::string routes_path, std::string ports_path, std:
             dist = curr.getDist();
         path.pop();
     } //initialize vector representing Aiports that represent shorted path
-    std::cout << "2";
     visual.addTour(visualPath, dist);
-    std::cout << "3";
     //visual tour algorithm either directly in here or by function
 
     Image img;
     visual.getVisualOutput(img);
-    std::cout << "4";
     img.writeToFile(image_path);
     std::cout << "Map generated at " << image_path << std::endl;
 
@@ -405,7 +401,7 @@ int main() {
     ports_path = "data/airports-preprocessed.csv";
     image_path = "images/path_map.png";
 
-    std::cout << "Hello CS225 Staff." << std::endl <<
+    std::cout << "Hello User." << std::endl <<
         "This is the Route Planner created by Lucian Bontumasi, Jake Li, Eli Konopinski, and Satvik Yellanki"
         << std::endl << std::endl;
 

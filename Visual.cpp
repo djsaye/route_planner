@@ -93,10 +93,8 @@ void Visual::createLine(int x1, int y1, int x2, int y2) {
 
             rc = pthread_create(&threads[ind], NULL, &writePixels, (void *)&pi[ind]);
             if (rc) exit(-1);
-            //std::cout << "LOOP" << x << "\n";
 
         }
-        //std::cout << "DONE\n";
     }
     else{   //This is the same thing as above, but for more vertical cases
 
@@ -136,7 +134,6 @@ void *Visual::writePixels(void *  pixelInfo) {
         cs225::HSLAPixel & temp = pi->img->getPixel(pi->x + index, pi->y);
         temp = *(pi->pixel);
     }
-    //std::cout << "THREAD" << pi->x << "\n";
     pthread_exit(NULL);
 
 }
@@ -207,7 +204,6 @@ void Visual::addTour(std::vector<Airport> path, double dist) {
     drawText(dt_stats, 10, 10, "Total distance: " + std::to_string(dist) + " km");
 
     for (auto & p : threads) pthread_join(p, NULL);
-    std::cout << "DONE \n";
 }
 
 std::tuple<int, int, int, int> Visual::addLine(double lat1, double long1, double lat2, double long2, LineInfo & li, pthread_t & thread) {
@@ -257,7 +253,6 @@ std::tuple<int, int, int, int> Visual::addLine(double lat1, double long1, double
 }
 
 void *Visual::createLine(void * lineInfo) {
-    std::cout << "smth ";
     LineInfo * li = (LineInfo *) lineInfo;
     double x1 = (double) li->x1;
     double x2 = (double) li->x2;
@@ -300,7 +295,6 @@ void *Visual::createLine(void * lineInfo) {
             }
         }
     }
-    std::cout << "bruh";
     pthread_exit(NULL);
 }
 #else
