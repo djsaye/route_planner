@@ -1,8 +1,5 @@
 # OpenFlights route planner
 
-CS 225 final project, Spring 2022  
-Eli Konopinski, Satvik Yellanki, Lucian Bontumasi, Jake Li
-
 ## Welcome!
 We used the OpenFlights database to find the optimal paths between airports globally, and plot that path onto a map.
 
